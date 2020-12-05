@@ -17,11 +17,11 @@ class Scraper
   end
   
   def get_page(HTML)
-    return Nokogiri::open(HTML)
+    return Nokogiri::html(open(HTML))
   end 
   
   def get_courses(HTML)
-    return get_page.
+    return get_page.doc.css()
   end
   
 end
