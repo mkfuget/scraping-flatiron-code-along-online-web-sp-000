@@ -21,7 +21,7 @@ class Scraper
   end 
   
   def get_courses(address)
-    return get_page(address).css(".post")
+    return get_page.css(".post")
   end
   
 end
